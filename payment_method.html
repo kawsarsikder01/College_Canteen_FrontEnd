@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collage Canteen</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>College Canteen</title>
+    <link rel="stylesheet" href="css/payment.css">
     <link rel="stylesheet" href="css/user.css">
     <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/shoping_cart.css">
@@ -13,8 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-  <!--Navbar Section-->
-  <header class="header">
+   <!--Navbar Section-->
+   <header class="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark"data-bs-theme="dark">
       <div class="container my-2">
         <a class="navbar-brand" href="#">College <span class="text-warning">Canteen</span></a>
@@ -23,11 +23,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-5 mb-lg-0">
-
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home-page.html">Home</a>
-              </li>
-
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home-page.html">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
@@ -55,9 +53,7 @@
           </form>
           
         </div>
-
       </div>
-
     </nav>
     <div class="cart-items">
       <div class="cart-item">
@@ -103,23 +99,35 @@
     <a href="">Logout</a>
   </div>
   </header>
-
-<!--Login Section-->
-
-<section id="login">
-    <h3>Login</h3>
-    <div class="container login">
-        <form action="">
-            <input type="email"class="d-block m-auto"  name="email"id="email" placeholder="username or email">
-            <input type="password"class="d-block m-auto my-3"name ="password" placeholder="password">
-           <button type="button" class="d-block m-auto button px-5">SING IN</button>
-           <button type="button" class="d-block m-auto button button1 px-5">SING UP</button>
-           <a href="#">Forgot Password</a>
-        </form>
+  
+<!--Payment Method-->
+  <section id="payment_method">
+    <h3>Select Your Payment Method</h3>
+    <div class="payment_method container-fluid">
+        <div class="credit payment_item">
+            <a href="#"><i class="fa-regular fa-credit-card"></i></a>
+            <h6>Credit/Debit Card</h6>
+        </div>
+        <div class="nagod img payment_item">
+            <a href="#"><img src="images/nagod.png" height="100px" width="100px"  alt=""></a>
+            <h6>Nagod</h6>
+        </div>
+        <div class="rocket img payment_item">
+            <a href="#"><img src="images/rocket.jpeg" height="100px" width="100px" alt=""></a>
+            <h6>Rocket</h6>
+        </div>
+        <div class="bKash img payment_item">
+            <a href="#"><img src="images/bkash.png" height="100px" width="100px" alt=""></a>
+            <h6>bKash</h6>
+        </div>
+        <div  class="cash_on payment_item">
+            <a href="thankyou.html"><i class="fa fa-money-check-dollar"></i></a>
+            <h6>Cash On Delivery</h6>
+        </div>
     </div>
-</section>
+  </section>
 
-<!--Footer Section-->
+  <!--Footer Section-->
 <footer id="footer">
   <div class="right-reserved">
   <p>&copy;Copyright 2023 by Collage Canteen All Right Reserved.</p>
@@ -128,8 +136,7 @@
   <h6>Collage <span class="text-warning">Canteen</span></h6>
   </div>
   </footer>
-<script src="js/shopping_cart.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="js/shopping_cart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

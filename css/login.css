@@ -40,3 +40,13 @@
     text-decoration: none;
     color:#FDE2F3;
 }
+.button1{
+    background-color: #2A2F4F ;
+    color:#FDE2F3;
+    border:1px solid #FDE2F3;
+}
+.button1:hover{
+    background-color: #FDE2F3 ;
+    color:#2A2F4F;
+    transition: 1s;
+}

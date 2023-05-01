@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collage Canteen</title>
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/shoping_cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
 <!--Navbar Section-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark"data-bs-theme="dark">
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark"data-bs-theme="dark">
     <div class="container my-2">
       <a class="navbar-brand" href="#">College <span class="text-warning">Canteen</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,17 +42,63 @@
             <a class="nav-link"href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"href="login.html">Login</a>
+            <a class="nav-link" href="login.html">Login</a>
           </li>
         </ul>
+        <a href="#" class="btn btn-info shopping-cart mx-4"><i class="fa fa-shopping-cart text-light "></i></a>
+        <a href="#" class="btn btn-info users mx-4"><i class="fa fa-user text-light "></i></a>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        
       </div>
     </div>
   </nav>
-
+  <div class="cart-items">
+    <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="images/meat.jpg"height="50px"width="50px" alt="">
+        <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+    <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="images/grilld chicken.jpg"height="50px"width="50px" alt="">
+        <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+    <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="images/fried_chicken.jpg"height="50px"width="50px" alt="">
+        <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+    <div class="cart-item">
+        <span class="fas fa-times"></span>
+        <img src="images/chicken_sand.jpg"height="50px"width="50px" alt="">
+        <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">$15.99/-</div>
+        </div>
+    </div>
+    <a href="payment_method.html" class="cart-btn">checkout now</a>
+</div>
+<div class="user">
+  <a href="">manage my account</a>
+  <a href="">my orders</a>
+  <a href="">My Reviews</a>
+  <a href="">My Returns & Cancellation</a>
+  <a href="shipping_address.html">shipping address</a>
+  <a href="">Logout</a>
+</div>
+</header>
   <!--Contact Section-->
   <section id="contact">
     <h3>Contact</h3>
@@ -73,9 +124,20 @@
             <button type="submit" class="button px-4">Submit</button>
           </form>
     </div>
+    
   </section>
 
+  <!--Footer Section-->
+<footer id="footer">
+  <div class="right-reserved">
+  <p>&copy;Copyright 2023 by Collage Canteen All Right Reserved.</p>
+  </div>
+  <div class="brand-name">
+  <h6>Collage <span class="text-warning">Canteen</span></h6>
+  </div>
+  </footer>
 
+  <script src="js/shopping_cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
